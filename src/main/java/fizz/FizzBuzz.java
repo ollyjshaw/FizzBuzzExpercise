@@ -13,12 +13,14 @@ public class FizzBuzz {
     private String intToFizzBuzzed(int x) {
         if (x == 0) {
             return "0";
+        } else if (Integer.toString(x).contains("3")) {
+            return "lucky";
         } else if (x % 15 == 0) {
-            return "FizzBuzz";
+            return "fizzbuzz";
         } else if (x % 5 == 0) {
-            return "Buzz";
+            return "buzz";
         } else if (x % 3 == 0) {
-            return "Fizz";
+            return "fizz";
         } else {
             return Integer.toString(x);
         }
